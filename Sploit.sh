@@ -161,9 +161,11 @@ clear
 echo "PERINGATAN:ini akan berlangsung sangat lama semua tergantung internet kalian" | lolcat
 sleep 2
 pkg install wget bash
-pkg install ruby && pip install lolcat
+pkg install ruby && gem install lolcat
 pkg install git
 clear
+wget https://github.com/Hax4us/TermuxBlack/raw/master/install.sh
+bash install.sh -i
 git clone https://github.com/Hax4us/Metasploit_termux
 cd Metasploit_termux && chmod +x metasploit.sh
 ./metasploit.sh
